@@ -21,6 +21,7 @@ def login():
 @app.route('/sqrt', methods=['GET'])
 @jwt_required()
 def calcular_raiz():
+    print("Verificando cambios en git")
     try:
         numero = float(request.args.get('numero'))
         if numero < 0:
